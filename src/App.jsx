@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
-import ThermalPrinter from './components/ThermalPrinter';
-import ReactToPrintWay from './components/react-to-print';
+import React from 'react';
+import ReactToPrintWay from './components';
 
 function App() {
-  const [isFirstPrinter, setIsFirstPrinter] = useState(true);
 
-  const togglePrinter = () => {
-    setIsFirstPrinter(prev => !prev);
-  };
 
   return (
     <div>
-      <button onClick={togglePrinter}>
-        Switch to {isFirstPrinter ? 'ThermalPrinterWay' : 'ReactToPrintWay'}
-      </button>
+
 
       <div className='container'>
-        {isFirstPrinter ? <ThermalPrinter /> : <ReactToPrintWay />}
+        <ReactToPrintWay />
       </div>
     </div>
   );

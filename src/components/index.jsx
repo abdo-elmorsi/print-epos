@@ -10,8 +10,10 @@ const PrintEposReceipt = () => {
   return (
     <div>
       <h1>Print EPOS Receipt Example</h1>
-      <button onClick={handlePrint}>Print Receipt</button>
-      <Receipt ref={contentRef} />
+      <button onClick={handlePrint}>Print</button>
+      <div>
+        <Receipt ref={contentRef} />
+      </div>
     </div>
   );
 };

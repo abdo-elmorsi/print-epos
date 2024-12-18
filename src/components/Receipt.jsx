@@ -1,6 +1,6 @@
 // components/Receipt.js
 import React from 'react';
-import './style.css'; 
+import './style.css';
 
 const Receipt = React.forwardRef((props, ref) => {
   return (
@@ -14,7 +14,7 @@ const Receipt = React.forwardRef((props, ref) => {
 
       <p style={{ fontSize: '12px' }}>Owner: Owner</p>
       <p style={{ fontSize: '12px' }}>Branch: 310879518300003</p>
-      <p style={{ fontSize: '12px' }}>-----------------------------------</p>
+      <p className='line'></p>
 
       <p style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px' }}>
         <span>Item 1</span>
@@ -25,7 +25,7 @@ const Receipt = React.forwardRef((props, ref) => {
         <span>18.00</span>
       </p>
 
-      <p style={{ fontSize: '12px' }}>-----------------------------------</p>
+      <p className='line'></p>
       <p style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px' }}>
         <strong>Total</strong>
         <strong>36.00</strong>
@@ -45,3 +45,5 @@ const Receipt = React.forwardRef((props, ref) => {
 });
 
 export default Receipt;
+
+Receipt.displayName = "Receipt"
